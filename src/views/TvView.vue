@@ -11,20 +11,10 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div>
-    <h1>Gêneros de programas de TV</h1>
-    <ul>
-      <li v-for="genre in genres" :key="genre.id">
-        {{ genre.name }}
-      </li>
-    </ul>
-  </div>
-</template>
-<template>
   <h1>Programas de TV</h1>
   <ul class="genre-list">
     <li v-for="genre in genres" :key="genre.id" class="genre-item">
-      {{ genre.name }}
+        {{ genre.name }}
     </li>
   </ul>
 </template>
